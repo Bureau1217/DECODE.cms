@@ -36,6 +36,7 @@ columns:
               - toggle
               - text
               - formations
+              - concerts-event
 
   sidebar:
     width: 1/3

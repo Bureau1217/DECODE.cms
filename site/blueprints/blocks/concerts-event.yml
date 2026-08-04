@@ -1,0 +1,10 @@
+blueprint: block
+
+name: Concerts et événements
+
+icon: calendar
+
+fields:
+  help:
+    type: info
+    text: Ce block ne contient aucun champ éditable. Il sert uniquement de point d'ancrage pour afficher dynamiquement le composant "concerts et événements" en front.
