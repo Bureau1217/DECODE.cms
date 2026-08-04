@@ -3,6 +3,9 @@ blueprint: site
 title: Site
 
 sections:
+  infos:
+    type: pages
+    template: infos
   pages:
     type: pages
     template: default
