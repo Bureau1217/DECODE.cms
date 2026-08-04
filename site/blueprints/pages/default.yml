@@ -16,6 +16,12 @@ columns:
           header_subtitle:
             label: Sous-titre header
             type: text
+          header_image:
+            label: Image header
+            type: files
+            multiple: false
+            query: page.images
+            uploads: true
 
 
       contenu:
