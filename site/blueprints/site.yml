@@ -5,7 +5,7 @@ title: Site
 sections:
   infos:
     type: pages
-    template: infos
+    template: site_infos
   pages:
     type: pages
     template: default

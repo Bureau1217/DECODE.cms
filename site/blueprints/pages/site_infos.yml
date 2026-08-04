@@ -2,3 +2,24 @@ blueprint: page
 
 title: Site Infos
 
+columns:
+  main:
+    width: 2/3
+    sections:
+      infos:
+        type: fields
+        fields:
+          infos_bands:
+            type: structure
+            label: Bandeau infos
+            fields:
+              infos_bands_text:
+                type: text
+                label: Texte du bandeau
+              infos_bands_image:
+                type: files
+                label: Image du bandeau
+              infos_bands_link:
+                type: link
+                label: Lien du bandeau
+                help: Lien vers une page ou une URL externe lorsque l'on clique dessus
