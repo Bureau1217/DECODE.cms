@@ -1,0 +1,23 @@
+blueprint: block
+
+name: Gallery
+
+icon: images
+
+fields:
+  items:
+    label: Items
+    type: structure
+    fields:
+      title:
+        label: Titre
+        type: text
+      image:
+        label: Image
+        type: files
+        multiple: false
+        query: page.images
+        uploads: true
+      link:
+        label: Lien
+        type: url
