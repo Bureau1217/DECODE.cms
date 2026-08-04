@@ -35,6 +35,7 @@ columns:
               - list
               - toggle
               - text
+              - formations
 
   sidebar:
     width: 1/3
