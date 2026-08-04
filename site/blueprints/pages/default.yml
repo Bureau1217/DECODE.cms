@@ -1,21 +1,39 @@
-title: Default Page
+blueprint: page
+
+title: Page
 
 columns:
   main:
     width: 2/3
     sections:
-      fields:
+      header:
         type: fields
         fields:
-          text:
-            type: textarea
-            size: huge
+          header_title:
+            label: Titre header
+            type: text
+            help: Titre affiché dans le header (le titre de la page est utilisé si vide)
+          header_subtitle:
+            label: Sous-titre header
+            type: text
+
+
+      contenu:
+        type: fields
+        fields:
+          contenu:
+            label: Contenu
+            type: blocks
+            fieldsets:
+              - gallery
+              - list
+              - toggle
+              - text
+
   sidebar:
     width: 1/3
     sections:
-      pages:
+      subpage:
+        label: Sous-pages
         type: pages
         template: default
-      files:
-        type: files
-

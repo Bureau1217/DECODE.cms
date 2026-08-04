@@ -1,0 +1,14 @@
+name: field.blocks.text.name
+icon: text
+preview: text
+fields:
+  text:
+    label: Texte
+    type: writer
+    inline: false
+    nodes:
+      - paragraph
+      - bulletList
+    marks:
+      - italic
+    placeholder: field.blocks.text.placeholder

@@ -1,0 +1,13 @@
+name: Toggle
+icon: angle-down
+fields:
+  items:
+    label: Items
+    type: structure
+    fields:
+      titre:
+        label: Titre
+        type: text
+      contenu:
+        label: Contenu
+        type: writer
