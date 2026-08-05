@@ -33,6 +33,7 @@ columns:
             fieldsets:
               - gallery
               - list
+              - testimonials
               - toggle
               - text
               - formations
