@@ -1,0 +1,10 @@
+blueprint: block
+
+name: Citations Alumni et étudiant·e·xs
+
+icon: calendar
+
+fields:
+  help:
+    type: info
+    text: Ce block ne contient aucun champ éditable. Il sert uniquement de point d'ancrage pour afficher dynamiquement le composant "Citations Alumni et étudiant·e·xs" en front.
