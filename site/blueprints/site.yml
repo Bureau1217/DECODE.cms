@@ -6,6 +6,14 @@ sections:
   infos:
     type: pages
     template: site_infos
+  temoignages:
+    label: Témoignages / Alumni
+    type: pages
+    template: testimonials
+  teachers:
+    label: Enseignant·e·xs & Responsable·xs
+    type: pages
+    template: teachers
   pages:
     type: pages
     template: default

@@ -1,0 +1,33 @@
+blueprint: page
+
+title: Témoignage / Alumni
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      testimonys:
+        type: fields
+        fields:
+          testimony_items:
+            type: structure
+            label: Étudiant·e·xs ou alumni·e·xs
+            fields:
+              testimony_item_role:
+                type: tags
+                label: statue
+                options:
+                  - Design
+                  - Architecture
+                  - Photography
+                  - 3D
+                  - Web
+              testimony_item_photo:
+                type: files
+                label: Photo
+                multiple: false
+                query: page.images
+                uploads: true
+              testimony_item_text:
+                type: writer
+                label: Témoignage
