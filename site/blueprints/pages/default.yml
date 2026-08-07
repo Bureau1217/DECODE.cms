@@ -48,6 +48,7 @@ columns:
               - text
               - formations
               - concerts-event
+              - citation
 
   sidebar:
     width: 1/3

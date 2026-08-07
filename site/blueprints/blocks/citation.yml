@@ -1,0 +1,13 @@
+blueprint: block
+
+name: Citation
+
+icon: quote
+
+fields:
+  contenu:
+    type: writer
+    label: Contenu
+  signature:
+    type: text
+    label: Signature (auteur·ice·x)
