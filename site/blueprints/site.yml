@@ -2,19 +2,49 @@ blueprint: site
 
 title: Site
 
-sections:
-  infos:
-    type: pages
-    template: site_infos
-  temoignages:
-    label: Témoignages / Alumni
-    type: pages
-    template: testimonials
-  teachers:
-    label: Enseignant·e·xs & Responsable·xs
-    type: pages
-    template: teachers
-  pages:
-    type: pages
-    template: default
+
+columns:
+  - width: 1/4
+    sections:
+      infos:
+        label: Informations Génarales
+        help: Informations générales sur le site
+        image: false
+        layout: cards
+        type: pages
+        template: site_infos
+
+      teachers:
+        label: Enseignant·e·xs & Responsable·xs
+        image: false
+        layout: cards
+        type: pages
+        template: teachers
+      temoignages:
+        label: Témoignages / Alumni
+        image: false
+        layout: cards
+        type: pages
+        template: testimonials
+
+
+  - width: 3/4
+    sections:
+      pages:
+        label: Pages
+        layout: cards
+        type: pages
+        template: default
+
+  - width: 1/4
+    fields:
+      gap: true
+
+  - width: 3/4
+    sections:
+      pages:
+        label: Événements
+        layout: cards
+        type: pages
+        template: Events
 
