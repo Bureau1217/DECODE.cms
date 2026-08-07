@@ -1,0 +1,18 @@
+blueprint: page
+
+title: Événements
+
+columns:
+  main:
+    width: 3/3
+    sections:
+      events_items:
+        label: Événements
+        type: pages
+        layout: cards
+        template: event_item
+        image:
+          query: page.event_cover.toFile
+          cover: true
+        text: "{{ page.title }}"
+        info: "{{ page.event_date.toDate('d.m.Y') }}"

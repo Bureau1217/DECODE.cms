@@ -20,12 +20,20 @@ columns:
         layout: cards
         type: pages
         template: teachers
+
       temoignages:
         label: Témoignages / Alumni
         image: false
         layout: cards
         type: pages
         template: testimonials
+
+      events:
+        label: Événements
+        layout: cards
+        type: pages
+        template: events
+
 
 
   - width: 3/4
@@ -39,12 +47,3 @@ columns:
   - width: 1/4
     fields:
       gap: true
-
-  - width: 3/4
-    sections:
-      pages:
-        label: Événements
-        layout: cards
-        type: pages
-        template: Events
-
