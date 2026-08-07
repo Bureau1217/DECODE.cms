@@ -2,7 +2,7 @@ blueprint: block
 
 name: Formations
 
-icon: mortarboard
+icon: globe
 
 fields:
   help:
