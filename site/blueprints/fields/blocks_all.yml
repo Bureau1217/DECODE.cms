@@ -8,6 +8,7 @@ fieldsets:
   formations: true
   gallery: true
   list: true
+  resources: true
   testimonials: true
   text: true
   toggle: true

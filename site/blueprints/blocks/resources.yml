@@ -1,0 +1,35 @@
+blueprint: block
+name: Ressources
+icon: download
+preview: fields
+wysiwyg: true
+
+fields:
+  resource_items:
+    type: structure
+    label: Ressources
+    fields:
+      resource_title:
+        type: text
+        label: Titre
+      resource_type:
+        type: select
+        label: Type de ressource
+        empty: false
+        options:
+          file: Fichier PDF
+          link: Lien
+      resource_file:
+        type: files
+        label: Fichier PDF
+        multiple: false
+        query: page.files.filterBy("extension", "pdf")
+        uploads:
+          template: pdf
+        when:
+          resource_type: file
+      resource_link:
+        type: link
+        label: Lien
+        when:
+          resource_type: link
