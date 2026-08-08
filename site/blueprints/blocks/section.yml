@@ -24,6 +24,8 @@ fields:
 
   content:
     extends: fields/blocks_all
+    fieldsets:
+      array-layout: true
     label: Contenu
 
 
