@@ -26,7 +26,9 @@ Ce fichier sert de consigne de départ pour Claude au lancement d'un nouveau pro
 - Évite de dupliquer des blocs YAML identiques ou très proches entre plusieurs blueprints.
 - Quand plusieurs pages, fichiers ou blocks partagent une structure, extrais une configuration commune ou un modèle réutilisable.
 - Les blueprints doivent rester lisibles, cohérents et faciles à recopier dans un autre projet Kirby.
-- utiliser des nom de field en anglais, et toujours metre un label en Francais
+- IMPORTANT : les noms de fields sont TOUJOURS en anglais, le label TOUJOURS en français.
+  Exemple : `text_content:` avec `label: Texte`, `link_url:` avec `label: Lien`.
+  Ne jamais imiter les noms français hérités (`titre`, `contenu`, `section_texte`) présents dans d'anciens blueprints.
 
 ## PHP
 
