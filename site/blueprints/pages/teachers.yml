@@ -7,26 +7,5 @@ columns:
     width: 2/3
     sections:
       teachers:
-        type: fields
-        fields:
-          teachers_items:
-            type: structure
-            fields:
-              teachers_fonction:
-                type: tags
-                label: Fonction
-                options:
-                  - enseignant·e·x
-                  - responsable·x
-              teachers_photo:
-                type: files
-                label: Photo
-                multiple: false
-                query: page.images
-                uploads: true
-              teachers_bio:
-                type: writer
-                label: Présentation
-              teachers_email:
-                type: text
-                label: E-mail
+        type: pages
+        template: teacher
