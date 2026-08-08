@@ -1,0 +1,21 @@
+blueprint: block
+name: Cartels
+icon: tag
+preview: fields
+wysiwyg: true
+
+fields:
+  cards:
+    type: structure
+    fields:
+      tags:
+        type: tags
+        label: Tags
+
+      title:
+        type: text
+        label: Titre
+
+      description:
+        type: writer
+        label: Description

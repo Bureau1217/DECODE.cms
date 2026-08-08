@@ -1,6 +1,7 @@
 type: blocks
 
 fieldsets:
+  cartels: true
   citation: true
   concerts-event: true
   cta: true
