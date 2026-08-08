@@ -1,0 +1,29 @@
+blueprint: block
+
+name: CtA
+
+icon: alert
+
+fields:
+  title:
+    type: writer
+    label: Titre
+    inline: true
+    nodes:
+      - paragraph
+    marks:
+      - italic
+
+  description:
+    type: writer
+    label: Description
+    inline: true
+    nodes:
+      - paragraph
+    marks:
+      - italic
+
+  link:
+    type: link
+    label: Lien
+
