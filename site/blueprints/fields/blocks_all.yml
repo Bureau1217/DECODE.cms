@@ -9,3 +9,4 @@ fieldsets:
   formations: true
   concerts-event: true
   citation: true
+  form : true

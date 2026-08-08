@@ -1,0 +1,31 @@
+blueprint: block
+
+name: Tableau avec colonnes
+
+icon: grid
+
+fields:
+
+  title:
+    type: text
+    label: Titre
+    width: 1/2
+    help: Titre de la section
+
+  columns:
+    type: structure
+    label: Collones
+    fields:
+      columns_title:
+        type: writer
+        label: Titre de la collone
+        width: 1/2
+        inline: true
+        nodes:
+          - paragraph
+        marks:
+          - italic
+
+      columns_content:
+        extends: fields/blocks_all
+        label: Contenu

@@ -42,6 +42,7 @@ columns:
             label: Contenu
             fieldsets:
               section: true
+              array-layout : true
 
   sidebar:
     width: 1/3

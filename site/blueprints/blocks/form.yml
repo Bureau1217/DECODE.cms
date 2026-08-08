@@ -9,12 +9,10 @@ fields:
     type: select
     label: Type de formulaire
     options:
-      inscription:
-        value: inscription
-        label: formulaire d'inscription
-      contact:
-        value: contact
-        label: formulaire de contact
+        - value: inscription
+          text: formulaire d'inscription
+        - value: contact
+          text: formulaire de contact
 
   help:
     type: info
