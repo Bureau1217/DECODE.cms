@@ -1,0 +1,21 @@
+blueprint: block
+
+name: Formulaire
+
+icon: check
+
+fields:
+  form_type :
+    type: select
+    label: Type de formulaire
+    options:
+      inscription:
+        value: inscription
+        label: formulaire d'inscription
+      contact:
+        value: contact
+        label: formulaire de contact
+
+  help:
+    type: info
+    text: Ce block ne contient aucun champ éditable. Il sert uniquement de point d'ancrage pour afficher dynamiquement le composant "formulaire" en front.
