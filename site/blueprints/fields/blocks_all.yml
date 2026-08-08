@@ -1,0 +1,11 @@
+type: blocks
+
+fieldsets:
+  gallery: true
+  list: true
+  testimonials: true
+  toggle: true
+  text: true
+  formations: true
+  concerts-event: true
+  citation: true

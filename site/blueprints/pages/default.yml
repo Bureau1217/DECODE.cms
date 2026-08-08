@@ -37,7 +37,8 @@ columns:
       contenu:
         type: fields
         fields:
-          contenu:
+          content:
+            extends: fields/blocks_all
             label: Contenu
             type: blocks
             fieldsets:
