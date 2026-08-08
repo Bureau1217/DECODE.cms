@@ -1,8 +1,8 @@
 blueprint: block
-
 name: Formations
-
 icon: globe
+preview: fields
+wysiwyg: true
 
 fields:
   help:

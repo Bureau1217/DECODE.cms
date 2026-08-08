@@ -1,6 +1,9 @@
-name: field.blocks.text.name
+blueprint: block
+name: Contenu texte
 icon: text
-preview: text
+preview: fields
+wysiwyg: true
+
 fields:
   text:
     label: Texte

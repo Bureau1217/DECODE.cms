@@ -1,8 +1,8 @@
 blueprint: block
-
 name: Citations Alumni et étudiant·e·xs
-
 icon: calendar
+preview: fields
+wysiwyg: true
 
 fields:
   help:

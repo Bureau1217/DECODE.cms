@@ -1,8 +1,8 @@
 blueprint: block
-
 name: Formulaire
-
 icon: check
+preview: fields
+wysiwyg: true
 
 fields:
   form_type :

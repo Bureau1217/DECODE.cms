@@ -1,5 +1,9 @@
+blueprint: block
 name: Toggle
 icon: angle-down
+preview: fields
+wysiwyg: true
+
 fields:
   items:
     label: Items

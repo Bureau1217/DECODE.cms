@@ -1,8 +1,8 @@
 blueprint: block
-
 name: CtA
-
 icon: alert
+preview: fields
+wysiwyg: true
 
 fields:
   title:

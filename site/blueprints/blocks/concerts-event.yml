@@ -1,8 +1,8 @@
 blueprint: block
-
 name: Concerts et événements
-
 icon: calendar
+preview: fields
+wysiwyg: true
 
 fields:
   help:

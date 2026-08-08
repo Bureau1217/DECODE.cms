@@ -1,5 +1,9 @@
+blueprint: block
 name: List
 icon: list-bullet
+preview: fields
+wysiwyg: true
+
 fields:
   items:
     label: Items

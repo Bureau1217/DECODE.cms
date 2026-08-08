@@ -1,8 +1,8 @@
 blueprint: block
-
 name: Section
-
 icon: grid
+preview: fields
+wysiwyg: true
 
 fields:
 
