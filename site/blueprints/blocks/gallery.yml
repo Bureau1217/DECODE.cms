@@ -12,6 +12,14 @@ fields:
       title:
         label: Titre
         type: text
+      content:
+        label: Contenu
+        type: writer
+        inline: true
+        nodes:
+          - paragraph
+        marks:
+          - italic
       image:
         label: Image
         type: files

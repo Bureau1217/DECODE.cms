@@ -1,0 +1,36 @@
+blueprint: block
+name: Planning
+icon: calendar
+preview: fields
+wysiwyg: true
+
+fields:
+  planning_items:
+    type: structure
+    label: Planning
+    fields:
+      day:
+        type: select
+        label: Jour
+        empty: false
+        options:
+          monday: Lundi
+          tuesday: Mardi
+          wednesday: Mercredi
+          thursday: Jeudi
+          friday: Vendredi
+          saturday: Samedi
+          sunday: Dimanche
+      courses:
+        type: structure
+        label: Cours
+        fields:
+          time-tart:
+            type: time
+            label: Heure de début
+          time-end:
+            type: time
+            label: Heure de fin
+          title:
+            type: text
+            label: Titre

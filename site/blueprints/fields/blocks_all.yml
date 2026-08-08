@@ -9,6 +9,7 @@ fieldsets:
   formations: true
   gallery: true
   list: true
+  planning: true
   resources: true
   teachers: true
   testimonials: true
