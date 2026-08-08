@@ -1,0 +1,40 @@
+blueprint: block
+
+name: Section
+
+icon: grid
+
+fields:
+
+  title:
+    type: text
+    label: Titre
+    width: 1/2
+    help: Titre de la section
+
+  tags:
+    type: tags
+    label: Tags
+    width: 1/2
+
+  text:
+    type: writer
+    label: Texte
+    help: Texte d'introduction dans le header de la section
+
+  content:
+    extends: fields/blocks_all
+    label: Contenu
+
+
+  link:
+    type: object
+    label: Liens
+    help: Url et texte du bouton pour ajouter un lien dans le header de la section
+    fields:
+      link_url:
+        type: link
+        label: Lien
+      link_text:
+        type: text
+        label: Texte du lien

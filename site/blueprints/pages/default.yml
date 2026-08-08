@@ -34,22 +34,14 @@ columns:
 
 
 
-      contenu:
+      main:
         type: fields
         fields:
           content:
             extends: fields/blocks_all
             label: Contenu
-            type: blocks
             fieldsets:
-              - gallery
-              - list
-              - testimonials
-              - toggle
-              - text
-              - formations
-              - concerts-event
-              - citation
+              section: true
 
   sidebar:
     width: 1/3
