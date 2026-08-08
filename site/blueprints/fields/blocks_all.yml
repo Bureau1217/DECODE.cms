@@ -1,12 +1,13 @@
 type: blocks
 
 fieldsets:
+  citation: true
+  concerts-event: true
+  cta: true
+  form : true
+  formations: true
   gallery: true
   list: true
   testimonials: true
-  toggle: true
   text: true
-  formations: true
-  concerts-event: true
-  citation: true
-  form : true
+  toggle: true
