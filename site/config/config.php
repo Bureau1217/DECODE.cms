@@ -23,4 +23,7 @@ return [
     'panel' => [
         'css' => '_custom-panel/main.css',
     ],
+    'kql' => [
+        'auth' => false, // TEMP: local test only, revert after check
+    ],
 ];
