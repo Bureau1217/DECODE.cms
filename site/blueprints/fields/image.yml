@@ -1,0 +1,5 @@
+label: Image
+type: files
+multiple: false
+query: page.images
+uploads: true

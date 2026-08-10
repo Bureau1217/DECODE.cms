@@ -32,11 +32,7 @@ fields:
         marks:
           - italic
       image:
-        label: Image
-        type: files
-        multiple: false
-        query: page.images
-        uploads: true
+        extends: fields/image
       link:
         label: Lien
         type: url

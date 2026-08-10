@@ -1,0 +1,35 @@
+# Groupe de champs réutilisable : un média au choix (image, vidéo ou lien YouTube).
+# Usage : `media: { extends: fields/media }` — les champs sont aplatis dans le formulaire parent.
+type: group
+fields:
+  media_type:
+    label: Type de média
+    type: select
+    default: image
+    options:
+      image: Image
+      video: Vidéo (fichier)
+      youtube: Lien YouTube
+
+  image:
+    extends: fields/image
+    when:
+      media_type: image
+
+  video:
+    label: Vidéo
+    type: files
+    multiple: false
+    query: page.videos
+    uploads:
+      template: video
+    when:
+      media_type: video
+
+  youtube_url:
+    label: Lien YouTube
+    type: url
+    placeholder: https://www.youtube.com/watch?v=…
+    help: Coller l'URL de la vidéo YouTube
+    when:
+      media_type: youtube
