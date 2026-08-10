@@ -5,6 +5,17 @@ preview: fields
 wysiwyg: true
 
 fields:
+  title:
+    type: writer
+    label: Titre
+    inline: true
+    width: 1/2
+    nodes:
+      - paragraph
+    marks:
+      - italic
+    help: Titre de la section
+
   teacher_pages:
     type: pages
     label: Enseignant·e·xs & Responsable·xs

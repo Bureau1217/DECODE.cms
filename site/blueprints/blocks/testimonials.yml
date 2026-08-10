@@ -5,6 +5,17 @@ preview: fields
 wysiwyg: true
 
 fields:
+  title:
+    type: writer
+    label: Titre
+    inline: true
+    width: 1/2
+    nodes:
+      - paragraph
+    marks:
+      - italic
+    help: Titre de la section
+
   help:
     type: info
     text: Ce block ne contient aucun champ éditable. Il sert uniquement de point d'ancrage pour afficher dynamiquement le composant "Citations Alumni et étudiant·e·xs" en front.

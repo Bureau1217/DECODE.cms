@@ -9,10 +9,12 @@ fields:
     type: writer
     label: Titre
     inline: true
+    width: 1/2
     nodes:
       - paragraph
     marks:
       - italic
+    help: Titre de la section
 
   description:
     type: writer

@@ -5,6 +5,18 @@ preview: fields
 wysiwyg: true
 
 fields:
+  title:
+    type: writer
+    label: Titre
+    inline: true
+    width: 1/2
+    nodes:
+      - paragraph
+    marks:
+      - italic
+    help: Titre de la section
+
+
   form_type :
     type: select
     label: Type de formulaire
