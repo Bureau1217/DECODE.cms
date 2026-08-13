@@ -19,6 +19,10 @@ fields:
           - italic
         help: Titre de la section
 
+      description:
+        type: writer
+        label: Description
+
       partners:
         type: structure
         label: Liste des partenaires
@@ -29,7 +33,3 @@ fields:
           logo:
             extends: fields/image
             label: Logo
-
-      description:
-        type: writer
-        label: Description
