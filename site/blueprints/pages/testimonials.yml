@@ -17,11 +17,8 @@ columns:
                 type: tags
                 label: statue
                 options:
-                  - Design
-                  - Architecture
-                  - Photography
-                  - 3D
-                  - Web
+                  - Étudiant
+                  - Alumni
               testimony_item_photo:
                 type: files
                 label: Photo
