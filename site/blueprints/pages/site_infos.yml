@@ -9,6 +9,42 @@ columns:
       infos:
         type: fields
         fields:
+          adresse:
+            type: object
+            label: Adresse
+            fields:
+              name:
+                type: text
+                label: Nom
+              street:
+                type: text
+                label: Rue
+              number:
+                type: text
+                label: Numéro
+              postal_code:
+                type: text
+                label: Code postal
+              city:
+                type: text
+                label: Ville
+
+          phone_number:
+            type: text
+            label: Numéro de téléphone
+          fax:
+            type: text
+            label: Fax
+          email:
+            type: text
+            label: Email
+
+          pages:
+            type: pages
+            label: Pages
+            help: Pages a afficher dans le bas de page
+
+
           infos_bands:
             type: structure
             label: Bandeau infos
