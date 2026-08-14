@@ -14,25 +14,25 @@ columns:
         type: pages
         template: site_infos
 
-      teachers:
-        label: Enseignant·e·xs & Responsable·xs
-        image: false
-        layout: cards
-        type: pages
-        template: teachers
+      themes_section:
+        type: fields
+        fields:
+          themes:
+            label: Thématiques
+            type: structure
+            help: >
+              Liste des thématiques disponibles pour les pages. On peut en ajouter
+              ou modifier le nom, mais une thématique existante ne peut pas être
+              supprimée ici.
+            columns:
+              name:
+                label: Nom
+            fields:
+              name:
+                type: text
+                label: Nom
+                required: true
 
-      temoignages:
-        label: Témoignages / Alumni
-        image: false
-        layout: cards
-        type: pages
-        template: testimonials
-
-      events:
-        label: Événements
-        layout: cards
-        type: pages
-        template: events
 
 
 

@@ -51,3 +51,16 @@ columns:
         label: Sous-pages
         type: pages
         template: default
+      themes_section:
+        type: fields
+        fields:
+          themes:
+            type: checkboxes
+            label: Thématiques
+            help: Thématiques gérées dans les réglages du site
+            options:
+              type: query
+              query: site.themes.toStructure
+              text: "{{ item.name }}"
+              value: "{{ item.name }}"
+
