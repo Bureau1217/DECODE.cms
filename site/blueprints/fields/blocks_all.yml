@@ -1,18 +1,9 @@
 type: blocks
 
 fieldsets:
-  cartels: true
-  citation: true
-  concerts-event: true
-  cta: true
-  form : true
-  formations: true
-  gallery: true
-  list: true
-  partners: true
-  planning: true
-  resources: true
-  teachers: true
-  testimonials: true
-  text: true
-  toggle: true
+    citation : true
+    cta : true
+    cta_tool : true
+    gallery : true
+    resources : true
+    text : true
