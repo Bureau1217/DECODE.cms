@@ -6,6 +6,26 @@ columns:
   main:
     width: 2/3
     sections:
+      header:
+        type: fields
+        fields:
+          header_title:
+            type: writer
+            label: Titre
+            inline: true
+            nodes:
+              - paragraph
+            marks:
+              - italic
+          header_subtitle:
+            type: writer
+            label: Sous-titre
+            inline: true
+            nodes:
+              - paragraph
+            marks:
+              - italic
+
       infos:
         type: fields
         fields:
