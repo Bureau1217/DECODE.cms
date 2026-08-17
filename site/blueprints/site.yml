@@ -14,6 +14,14 @@ columns:
         type: pages
         template: site_infos
 
+      tools:
+        label: Outils
+        image: false
+        layout: cards
+        type: pages
+        template: tools
+
+
       themes_section:
         type: fields
         fields:
