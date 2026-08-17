@@ -29,53 +29,15 @@ columns:
       infos:
         type: fields
         fields:
-          adresse:
-            type: object
-            label: Adresse
-            fields:
-              name:
-                type: text
-                label: Nom
-              street:
-                type: text
-                label: Rue
-              number:
-                type: text
-                label: Numéro
-              postal_code:
-                type: text
-                label: Code postal
-              city:
-                type: text
-                label: Ville
-
-          phone_number:
-            type: text
-            label: Numéro de téléphone
-          fax:
-            type: text
-            label: Fax
-          email:
-            type: text
-            label: Email
+          long_description:
+            type: writer
+            label: Description longue
+            nodes:
+              - paragraph
+            marks:
+              - italic
 
           pages:
             type: pages
             label: Pages
             help: Pages a afficher dans le bas de page
-
-
-          infos_bands:
-            type: structure
-            label: Bandeau infos
-            fields:
-              infos_bands_text:
-                type: text
-                label: Texte du bandeau
-              infos_bands_image:
-                type: files
-                label: Image du bandeau
-              infos_bands_link:
-                type: link
-                label: Lien du bandeau
-                help: Lien vers une page ou une URL externe lorsque l'on clique dessus
