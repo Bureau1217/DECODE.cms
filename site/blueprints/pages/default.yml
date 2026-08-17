@@ -64,3 +64,12 @@ columns:
               text: "{{ item.name }}"
               value: "{{ item.name }}"
 
+      tools_section:
+        type: fields
+        fields:
+          tools:
+            type: pages
+            label: Outils
+            help: Outils à associer à cette page
+            query: site.index.filterBy('intendedTemplate', 'tool')
+
