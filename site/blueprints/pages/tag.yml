@@ -5,3 +5,13 @@ icon: tag
 
 options:
   delete: false
+
+columns:
+  main:
+    width: 1/1
+    sections:
+      image:
+        type: fields
+        fields:
+          image:
+            extends: fields/image
