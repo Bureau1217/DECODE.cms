@@ -1,0 +1,7 @@
+blueprint: page
+
+title: Thématique
+icon: tag
+
+options:
+  delete: false

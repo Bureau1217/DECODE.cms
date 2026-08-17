@@ -55,14 +55,10 @@ columns:
         type: fields
         fields:
           themes:
-            type: checkboxes
+            type: pages
             label: Thématiques
             help: Thématiques gérées dans les réglages du site
-            options:
-              type: query
-              query: site.themes.toStructure
-              text: "{{ item.name }}"
-              value: "{{ item.name }}"
+            query: site.index.filterBy('intendedTemplate', 'tag')
 
       tools_section:
         type: fields

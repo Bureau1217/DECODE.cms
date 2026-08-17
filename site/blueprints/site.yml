@@ -22,24 +22,16 @@ columns:
         template: tools
 
 
-      themes_section:
-        type: fields
-        fields:
-          themes:
-            label: Thématiques
-            type: structure
-            help: >
-              Liste des thématiques disponibles pour les pages. On peut en ajouter
-              ou modifier le nom, mais une thématique existante ne peut pas être
-              supprimée ici.
-            columns:
-              name:
-                label: Nom
-            fields:
-              name:
-                type: text
-                label: Nom
-                required: true
+      themes:
+        label: Thématiques
+        help: >
+          Thématiques disponibles pour les pages. On peut en ajouter ou
+          modifier le nom, mais une thématique existante ne peut pas être
+          supprimée.
+        image: false
+        layout: cards
+        type: pages
+        template: tag
 
 
 
