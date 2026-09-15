@@ -58,17 +58,17 @@ columns:
             type: pages
             label: Thématiques
             help: Thématiques gérées dans les réglages du site
-            query: site.index.filterBy('intendedTemplate', 'tag')
+            query: site.find('themes').children.filterBy('intendedTemplate', 'tag')
           concepts:
             type: pages
-            label: Thématiques
+            label: Concepts
             help: Thématiques gérées dans les réglages du site
-            query: site.index.filterBy('intendedTemplate', 'tag')
+            query: site.find('concepts').children.filterBy('intendedTemplate', 'tag')
           questions:
             type: pages
-            label: Thématiques
+            label: Questions
             help: Thématiques gérées dans les réglages du site
-            query: site.index.filterBy('intendedTemplate', 'tag')
+            query: site.find('question').children.filterBy('intendedTemplate', 'tag')
 
 
       tools_section:
