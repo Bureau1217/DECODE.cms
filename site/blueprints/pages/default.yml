@@ -59,6 +59,17 @@ columns:
             label: Thématiques
             help: Thématiques gérées dans les réglages du site
             query: site.index.filterBy('intendedTemplate', 'tag')
+          Concepts:
+            type: pages
+            label: Thématiques
+            help: Thématiques gérées dans les réglages du site
+            query: site.index.filterBy('intendedTemplate', 'tag')
+          Questions:
+            type: pages
+            label: Thématiques
+            help: Thématiques gérées dans les réglages du site
+            query: site.index.filterBy('intendedTemplate', 'tag')
+
 
       tools_section:
         type: fields
