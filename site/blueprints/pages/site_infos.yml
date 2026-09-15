@@ -37,7 +37,9 @@ columns:
             marks:
               - italic
 
-          pages:
-            type: pages
-            label: Pages
-            help: Pages a afficher dans le bas de page
+          sentences:
+            type: structure
+            label: Liste de phrase
+            fields:
+              sentence:
+                type: text
