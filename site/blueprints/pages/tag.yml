@@ -15,6 +15,7 @@ columns:
         fields:
           image:
             extends: fields/image
+            multiple: true
           description:
             type: writer
             label: Description
