@@ -9,10 +9,6 @@ columns:
       header:
         type: fields
         fields:
-          header_title:
-            label: Titre header
-            type: text
-            help: Titre affiché dans le header (le titre de la page est utilisé si vide)
           header_subtitle:
             label: Sous-titre header
             type: text
@@ -57,17 +53,17 @@ columns:
           themes:
             type: pages
             label: Thématiques
-            help: Thématiques gérées dans les réglages du site
+            help: Mot-clés gérées dans les réglages du site
             query: site.find('themes').children.filterBy('intendedTemplate', 'tag')
           concepts:
             type: pages
             label: Concepts
-            help: Thématiques gérées dans les réglages du site
+            help: Mot-clés gérées dans les réglages du site
             query: site.find('concepts').children.filterBy('intendedTemplate', 'tag')
           questions:
             type: pages
             label: Questions
-            help: Thématiques gérées dans les réglages du site
+            help: Mot-clés gérées dans les réglages du site
             query: site.find('question').children.filterBy('intendedTemplate', 'tag')
 
 
