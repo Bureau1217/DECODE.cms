@@ -59,12 +59,12 @@ columns:
             label: Thématiques
             help: Thématiques gérées dans les réglages du site
             query: site.index.filterBy('intendedTemplate', 'tag')
-          Concepts:
+          concepts:
             type: pages
             label: Thématiques
             help: Thématiques gérées dans les réglages du site
             query: site.index.filterBy('intendedTemplate', 'tag')
-          Questions:
+          questions:
             type: pages
             label: Thématiques
             help: Thématiques gérées dans les réglages du site
