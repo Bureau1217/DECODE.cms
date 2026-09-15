@@ -20,10 +20,7 @@ columns:
             type: writer
             label: Sous-titre
             inline: true
-            nodes:
-              - paragraph
-            marks:
-              - italic
+            marks: false
 
       infos:
         type: fields
