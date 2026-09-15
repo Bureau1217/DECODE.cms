@@ -19,6 +19,8 @@ columns:
 
           image:
             extends: fields/image
+            layout: cards
+            size: large
 
 
           url:
