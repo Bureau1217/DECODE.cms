@@ -30,8 +30,12 @@ columns:
         fields:
           long_description:
             type: writer
-            label: Description longue
-            nodes:
-              - paragraph
-            marks:
-              - italic
+            label: Description courte
+            inline: true
+            marks: false
+
+          informations:
+            type: writer
+            label: Texte d'information défilent
+            inline: true
+            marks: false
