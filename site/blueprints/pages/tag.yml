@@ -15,3 +15,11 @@ columns:
         fields:
           image:
             extends: fields/image
+          description:
+            type: writer
+            label: Description
+            inline: true
+            nodes:
+              - paragraph
+            marks:
+              - italic
