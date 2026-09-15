@@ -44,6 +44,12 @@ columns:
         size: small
         type: pages
         template: default
+      ressources:
+        label: Ressources
+        layout: cards
+        size: small
+        type: pages
+        template: ressources
 
 #  - width: 1/4
 #    fields:

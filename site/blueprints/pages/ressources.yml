@@ -1,0 +1,19 @@
+blueprint: page
+
+title: Thématique
+icon: tag
+
+options:
+  delete: false
+
+columns:
+  main:
+    width: 1/1
+
+    sections:
+      ressources:
+        label: Ressources
+        image: false
+        layout: cards
+        type: pages
+        template: ressource

@@ -1,0 +1,33 @@
+blueprint: page
+
+title: Item de ressource
+icon: tag
+
+options:
+  delete: false
+
+columns:
+  main:
+    width: 1/1
+    sections:
+      image:
+        type: fields
+        fields:
+          source:
+           type: writer
+           label: sources
+           inline: true
+           nodes:
+             - paragraph
+           marks:
+             - italic
+
+#          todo: catégorie de ressource, qui peut "Articles, Video, Podcast, Papier Académique"
+          description:
+            type: writer
+            label: Définition
+            inline: true
+            nodes:
+              - paragraph
+            marks:
+              - italic

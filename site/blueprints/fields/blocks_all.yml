@@ -3,7 +3,7 @@ type: blocks
 fieldsets:
     citation : true
     cta : true
-    cta_tool : true
+    cta_tool : false
     gallery : true
     resources : true
     text : true
