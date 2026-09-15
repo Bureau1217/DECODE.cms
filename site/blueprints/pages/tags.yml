@@ -12,6 +12,7 @@ columns:
 
     sections:
       tags:
+        label: Mot-clés
         help: >
           On peut en ajouter ou modifier le nom, mais un item de "{{page.title}}" existant ne peut pas être supprimée.
         image: false

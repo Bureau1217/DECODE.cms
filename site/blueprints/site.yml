@@ -24,10 +24,10 @@ columns:
   - width: 1/4
     sections:
       themes:
-        label: Thématiques
+        label: Mot-clés
         help: >
-          Thématiques disponibles pour les pages. On peut en ajouter ou
-          modifier le nom, mais une thématique existante ne peut pas être
+          Mot-clé disponibles pour les pages. On peut en ajouter ou
+          modifier le nom, mais un mot-clé existante ne peut pas être
           supprimée.
         image: false
         layout: cards
