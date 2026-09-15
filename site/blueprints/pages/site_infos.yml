@@ -11,7 +11,7 @@ columns:
         fields:
           sentences:
             type: structure
-            label: Liste de titre
+            label: Liste de titres
             fields:
               sentence:
                 type: text
