@@ -1,0 +1,22 @@
+blueprint: page
+
+title: Thématique
+icon: tag
+
+options:
+  delete: false
+
+columns:
+  main:
+    width: 1/1
+
+    sections:
+      tags:
+        help: >
+          Thématiques disponibles pour les pages. On peut en ajouter ou
+          modifier le nom, mais un item de "{{page.title}}" existant ne peut pas être
+          supprimée.
+        image: false
+        layout: cards
+        type: pages
+        template: tag

@@ -31,7 +31,7 @@ columns:
         image: false
         layout: cards
         type: pages
-        template: tag
+        template: tags
 
 
 
