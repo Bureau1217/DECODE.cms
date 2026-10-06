@@ -10,24 +10,35 @@ columns:
   main:
     width: 1/1
     sections:
-      image:
+      content:
         type: fields
         fields:
+          subtitle:
+            type: text
+            label: Sous-titre
+
+          authors:
+            type: text
+            label: Auteurs
+
           source:
-           type: writer
-           label: sources
-           inline: true
-           nodes:
-             - paragraph
-           marks:
-             - italic
+            type: url
+            label: Source
 
 #          todo: catégorie de ressource, qui peut "Articles, Video, Podcast, Papier Académique"
           description:
             type: writer
-            label: Définition
+            label: Description
             inline: true
             nodes:
               - paragraph
             marks:
               - italic
+
+          file:
+            type: files
+            label: Fichier (PDF)
+            multiple: false
+            query: page.files.filterBy('extension', 'pdf')
+            uploads:
+              template: pdf
