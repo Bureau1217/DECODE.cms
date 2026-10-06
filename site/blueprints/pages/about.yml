@@ -1,5 +1,56 @@
-# todo : attention a la partie droite de la page (voir figma)
-#         partie de droite, nom; prénom et image
-# todo :titre
-# todo :sous titre
-# todo :faire les 3 tabs
+blueprint: page
+
+title: A propos
+
+columns:
+  main:
+    width: 1/1
+    sections:
+      header:
+        type: fields
+        fields:
+          header_subtitle:
+            label: Sous-titre
+            type: text
+          header_image:
+            extends: fields/image
+            label: Image
+
+      paragraphs:
+        type: fields
+        fields:
+          paragraph_1_title:
+            label: Titre du paragraphe 1
+            type: text
+          paragraph_1_content: &paragraph_content
+            label: Contenu du paragraphe 1
+            type: blocks
+            fieldsets:
+              text: true
+              image: true
+
+          paragraph_2_title:
+            label: Titre du paragraphe 2
+            type: text
+          paragraph_2_content:
+            <<: *paragraph_content
+            label: Contenu du paragraphe 2
+
+          paragraph_3_title:
+            label: Titre du paragraphe 3
+            type: text
+          paragraph_3_content:
+            <<: *paragraph_content
+            label: Contenu du paragraphe 3
+
+      teams:
+        type: fields
+        fields:
+          teams:
+            label: Équipes
+            help: >
+              Un bloc par groupe (ex. Équipe projet, Équipe dev), chacun
+              avec ses propres membres.
+            type: blocks
+            fieldsets:
+              team: true

@@ -7,19 +7,19 @@ columns:
   - width: 1/4
     sections:
       infos:
-        label: Informations Génarales
+        label: Informations Générales
         help: Informations générales sur le site
         image: false
         layout: cards
         type: pages
         template: site_infos
 
-      tools:
-        label: Outils
+      about:
+        label: A propos
         image: false
-        layout: cards
+        layout: list
         type: pages
-        template: tools
+        template: about
 
   - width: 1/4
     sections:
@@ -39,11 +39,18 @@ columns:
   - width: 2/4
     sections:
       pages:
-        label: Pages
+        label: Articles
         layout: cards
         size: small
         type: pages
         template: default
+      tools:
+        label: Outils
+        image: false
+        layout: cards
+        size: small
+        type: pages
+        template: tools
       ressources:
         label: Ressources
         layout: cards

@@ -1,0 +1,36 @@
+blueprint: block
+name: Équipe
+icon: users
+preview: fields
+wysiwyg: true
+
+fields:
+  title:
+    type: text
+    label: Nom du groupe
+    help: "Ex. : Équipe projet, Équipe dev"
+
+  members:
+    type: structure
+    label: Membres
+    fields:
+      first_name:
+        type: text
+        label: Prénom
+      last_name:
+        type: text
+        label: Nom
+      position:
+        type: text
+        label: Poste
+      short_bio:
+        type: writer
+        label: Bio courte
+        inline: true
+        nodes:
+          - paragraph
+        marks:
+          - italic
+      picture:
+        extends: fields/image
+        label: Photo
