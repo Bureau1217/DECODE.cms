@@ -1,0 +1,116 @@
+blueprint: page
+
+title: Campagne
+icon: flag
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          cover_image:
+            extends: fields/image
+            label: Image
+
+          short_description:
+            type: writer
+            label: Description courte
+            inline: true
+            nodes:
+              - paragraph
+            marks:
+              - italic
+
+          page_content:
+            type: writer
+            label: Analyse
+            inline: true
+            nodes:
+              - paragraph
+            marks:
+              - italic
+
+          sources:
+            type: tags
+            label: Sources
+            help: Liens vers les sources (une URL par tag)
+
+      receivers_section:
+        type: fields
+        fields:
+          receivers:
+            type: structure
+            label: Cibles / récepteurs
+            help: Un point sur la carte par ligne
+            fields:
+              receiver_country:
+                type: text
+                label: Pays
+                required: true
+                width: 1/2
+              receiver_target:
+                type: text
+                label: Cible
+                width: 1/2
+              target_type:
+                type: text
+                label: Type de cible
+                width: 1/2
+              notes:
+                type: text
+                label: Notes
+                width: 1/2
+              receiver_latitude:
+                type: number
+                label: Latitude
+                step: any
+                required: true
+                width: 1/2
+              receiver_longitude:
+                type: number
+                label: Longitude
+                step: any
+                required: true
+                width: 1/2
+
+  sidebar:
+    width: 1/3
+    sections:
+      emitter:
+        label: Émetteur
+        type: fields
+        fields:
+          emitter_country:
+            type: text
+            label: Pays émetteur
+            required: true
+          emitter_actor:
+            type: text
+            label: Acteur émetteur
+          date_or_period:
+            type: text
+            label: Date ou période
+            help: "Ex. : 2020–2021"
+          emitter_latitude:
+            type: number
+            label: Latitude
+            step: any
+            required: true
+          emitter_longitude:
+            type: number
+            label: Longitude
+            step: any
+            required: true
+
+      taxonomy:
+        label: Classement
+        type: fields
+        fields:
+          social_networks:
+            type: tags
+            label: Plateformes
+          strategy_used:
+            type: tags
+            label: Stratégies

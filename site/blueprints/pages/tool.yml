@@ -9,6 +9,10 @@ columns:
       image:
         type: fields
         fields:
+          subtitle:
+            type: text
+            label: Sous-titre
+
           description:
             type: writer
             label: Déscription
@@ -26,3 +30,37 @@ columns:
           url:
             label: URL
             type: url
+
+      keywords_section:
+        type: fields
+        fields:
+          themes:
+            type: pages
+            label: Thèmes
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('themes').children.filterBy('intendedTemplate', 'tag')
+          concepts:
+            type: pages
+            label: Concepts
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('concepts').children.filterBy('intendedTemplate', 'tag')
+          platforms:
+            type: pages
+            label: Plateformes
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('platforms').children.filterBy('intendedTemplate', 'tag')
+          questions:
+            type: pages
+            label: Questions
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('question').children.filterBy('intendedTemplate', 'tag')
+
+  sidebar:
+    width: 1/3
+    sections:
+      campaigns:
+        label: Campagnes
+        help: Utilisé par l'outil "Campaigns Maps" uniquement — ajoutez une campagne ici pour qu'elle apparaisse sur la carte.
+        type: pages
+        template: campaign
+        layout: list

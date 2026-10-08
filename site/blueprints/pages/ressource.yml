@@ -42,3 +42,27 @@ columns:
             query: page.files.filterBy('extension', 'pdf')
             uploads:
               template: pdf
+
+      keywords_section:
+        type: fields
+        fields:
+          themes:
+            type: pages
+            label: Thèmes
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('themes').children.filterBy('intendedTemplate', 'tag')
+          concepts:
+            type: pages
+            label: Concepts
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('concepts').children.filterBy('intendedTemplate', 'tag')
+          platforms:
+            type: pages
+            label: Plateformes
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('platforms').children.filterBy('intendedTemplate', 'tag')
+          questions:
+            type: pages
+            label: Questions
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('question').children.filterBy('intendedTemplate', 'tag')
