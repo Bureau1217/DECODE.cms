@@ -1,0 +1,46 @@
+title: Éditeur
+description: Peut créer et modifier le contenu, sans accès à l'administration du site.
+
+permissions:
+  access:
+    panel: true
+    site: true
+    settings: true
+    system: true
+    users: true
+    languages: true
+  site:
+    update: true
+  pages:
+    create: true
+    read: true
+    update: true
+    changeTitle: true
+    changeSlug: true
+    changeStatus: true
+    changeTemplate: true
+    delete: true
+    duplicate: true
+    move: true
+    sort: true
+  files:
+    create: true
+    read: true
+    update: true
+    replace: true
+    changeName: true
+    delete: true
+  user:
+    read: true
+    update: true
+    changeName: true
+    changeEmail: true
+    changePassword: true
+    changeLanguage: true
+    changeRole: true
+    delete: true
+  users:
+    create: true
+    changeRole: true
+    delete: true
+    update: true
