@@ -23,8 +23,12 @@ return [
     'panel' => [
         'css' => '_custom-panel/main.css',
     ],
+    'api' => [
+        'basicAuth'     => true,
+        'allowInsecure' => true,
+    ],
     'kql' => [
-        'auth' => true, // TEMP: local test only, revert after check
+        'auth' => true,
     ],
     // `api.basicAuth`/`api.allowInsecure` (needed for the KQL endpoint's
     // Basic Auth — DECODE.webapp's kqlUser/kqlPassword) deliberately
