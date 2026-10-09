@@ -1,0 +1,73 @@
+blueprint: page
+
+title: Critère
+icon: list-bullet
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          interface_label:
+            type: text
+            label: Libellé (interface)
+            required: true
+            help: Ce que les visiteurs voient dans la liste des critères.
+
+          category:
+            type: text
+            label: Catégorie
+            required: true
+            help: Les critères d'une même catégorie sont regroupés sous un même en-tête.
+
+          observable_signal:
+            type: textarea
+            label: Signal observable
+
+          why_it_matters:
+            type: textarea
+            label: Pourquoi c'est important
+
+          example_of_evidence:
+            type: text
+            label: Exemple de preuve
+
+      technical:
+        label: Détails techniques
+        type: fields
+        fields:
+          criterion_label:
+            type: text
+            label: Libellé (interne)
+
+          data_needed:
+            type: text
+            label: Données nécessaires
+
+          threshold_or_rule:
+            type: text
+            label: Seuil / règle
+
+          notes:
+            type: textarea
+            label: Notes
+
+  sidebar:
+    width: 1/3
+    sections:
+      meta:
+        type: fields
+        fields:
+          weight:
+            type: number
+            label: Poids
+            min: 1
+            max: 3
+            default: 1
+            help: 1 (faible) à 3 (fort) — utilisé pour le score de signal.
+
+          platforms:
+            type: tags
+            label: Plateformes concernées

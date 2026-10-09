@@ -54,3 +54,29 @@ columns:
             label: Questions
             help: Mots-clés gérés dans les réglages du site
             query: site.find('question').children.filterBy('intendedTemplate', 'tag')
+
+  sidebar:
+    width: 1/3
+    sections:
+      criteria:
+        label: Critères
+        help: La liste de critères affichée dans l'outil.
+        type: pages
+        template: criterion
+        layout: list
+
+      submissions:
+        label: Soumissions (verdicts des visiteurs)
+        help: Lecture seule — chaque soumission est créée automatiquement quand un·e visiteur·se enregistre un verdict dans l'outil.
+        type: pages
+        template: submission
+        layout: table
+        columns:
+          account_handle:
+            label: Compte
+          verdict:
+            label: Verdict
+          confidence:
+            label: Confiance
+          reviewed_at:
+            label: Soumis le

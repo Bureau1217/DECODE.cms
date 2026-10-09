@@ -54,3 +54,13 @@ columns:
             label: Questions
             help: Mots-clés gérés dans les réglages du site
             query: site.find('question').children.filterBy('intendedTemplate', 'tag')
+
+  sidebar:
+    width: 1/3
+    sections:
+      campaigns:
+        label: Campagnes
+        help: Ajoutez une campagne ici pour qu'elle apparaisse sur la carte.
+        type: pages
+        template: campaign
+        layout: list

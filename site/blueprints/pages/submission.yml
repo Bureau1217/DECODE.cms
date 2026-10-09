@@ -1,0 +1,50 @@
+blueprint: page
+title: Soumission
+
+icon: chat-bubble
+
+options:
+  create: false
+  changeTemplate: false
+  changeSlug: false
+
+columns:
+  main:
+    width: 1/1
+    sections:
+      content:
+        type: fields
+        fields:
+          account_handle:
+            type: text
+            label: Compte
+            disabled: true
+
+          account_platform:
+            type: text
+            label: Plateforme
+            disabled: true
+
+          verdict:
+            type: select
+            label: Verdict du visiteur
+            disabled: true
+            options:
+              legitimate: Legitimate
+              suspicious: Suspicious
+              bot_troll: Likely bot / troll
+
+          confidence:
+            type: number
+            label: Confiance (%)
+            disabled: true
+
+          note:
+            type: textarea
+            label: Note du visiteur
+            disabled: true
+
+          reviewed_at:
+            type: text
+            label: Soumis le
+            disabled: true

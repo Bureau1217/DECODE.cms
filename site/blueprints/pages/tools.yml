@@ -9,4 +9,7 @@ columns:
       tools:
         layout: cards
         type: pages
-        template: tool
+        template:
+          - tool
+          - campaigns-map-tool
+          - bot-troll-tool
