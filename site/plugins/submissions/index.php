@@ -17,11 +17,67 @@
  */
 
 use Kirby\Cms\App;
+use Kirby\Cms\Page;
+use Kirby\Http\Response;
 use Kirby\Toolkit\Str;
 
+const DECODE_VERDICT_LABELS = [
+	'legitimate' => 'Legitimate',
+	'suspicious' => 'Suspicious',
+	'bot_troll'  => 'Likely bot / troll',
+];
+
 App::plugin('decode/submissions', [
+	'pageMethods' => [
+		// Human-readable verdict for the panel's submissions table
+		// (bot-troll-tool.yml) and the CSV export below.
+		'verdictLabel' => function () {
+			$value = $this->verdict()->value();
+			return DECODE_VERDICT_LABELS[$value] ?? $value;
+		},
+	],
 	'routes' => function (App $kirby) {
 		return [
+			[
+				// CSV of every visitor verdict, newest first — linked from the
+				// "Soumissions des visiteurs" tab (bot-troll-tool.yml). Panel
+				// users only: the panel session cookie is shared with this
+				// same-origin route, so a logged-in editor just clicks it.
+				'pattern' => 'submissions/bot-troll-detector.csv',
+				'method'  => 'GET',
+				'action'  => function () use ($kirby) {
+					if (!$kirby->user()) {
+						return new Response('Log in to the panel first.', 'text/plain', 403);
+					}
+
+					$parent = $kirby->page('tools/bot-troll-detector');
+					$submissions = $parent
+						? $parent->childrenAndDrafts()->filterBy('intendedTemplate', 'submission')->sortBy('reviewed_at', 'desc')
+						: [];
+
+					$out = fopen('php://temp', 'r+');
+					// BOM so Excel opens accents (é, ·) as UTF-8.
+					fwrite($out, "\xEF\xBB\xBF");
+					fputcsv($out, ['Date', 'Compte', 'Plateforme', 'Verdict', 'Commentaire'], ',', '"', '');
+					foreach ($submissions as $submission) {
+						/** @var Page $submission */
+						fputcsv($out, [
+							$submission->reviewed_at()->toDate('Y-m-d H:i'),
+							$submission->account_handle()->value(),
+							$submission->account_platform()->value(),
+							$submission->verdictLabel(),
+							$submission->note()->value(),
+						], ',', '"', '');
+					}
+					rewind($out);
+					$csv = stream_get_contents($out);
+					fclose($out);
+
+					return new Response($csv, 'text/csv', 200, [
+						'Content-Disposition' => 'attachment; filename="bot-troll-submissions-' . date('Y-m-d') . '.csv"',
+					]);
+				}
+			],
 			[
 				// Not under /api/... — that path prefix is reserved for
 				// Kirby's own API router (where the kql plugin lives) and

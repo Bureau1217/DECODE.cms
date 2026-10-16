@@ -1,0 +1,5 @@
+# Students behind a tool — shown on the tool's entrance screen
+# (DECODE.webapp, ToolIntro.vue). Shared by every tool blueprint.
+type: text
+label: Étudiant·es
+help: Noms des étudiant·es à l'origine de l'outil, affichés sur l'écran d'accueil de l'outil.

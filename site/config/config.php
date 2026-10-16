@@ -12,6 +12,12 @@ use Kirby\Cms\Page;
 
 return [
     'debug' => true,
+    // English (default) + French — site/languages/{en,fr}.php. Content
+    // files are suffixed per language (`*.en.txt`, `*.fr.txt`); a page
+    // with no French translation yet falls back to its English content.
+    // DECODE.webapp picks the language per KQL request via the
+    // `X-Language` header (its footer's ENG/FR toggle).
+    'languages' => true,
     'routes' => [
         [
             'pattern' => '/',

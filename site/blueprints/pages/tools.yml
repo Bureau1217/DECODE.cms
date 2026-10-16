@@ -13,3 +13,4 @@ columns:
           - tool
           - campaigns-map-tool
           - bot-troll-tool
+          - source-reliability-tool

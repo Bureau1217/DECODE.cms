@@ -1,0 +1,69 @@
+blueprint: page
+
+title: Site Infos
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      image:
+        type: fields
+        fields:
+          subtitle:
+            type: text
+            label: Sous-titre
+
+          description:
+            type: writer
+            label: Déscription
+            nodes:
+              - paragraph
+            marks:
+              - italic
+
+          credits: fields/credits
+
+          image:
+            extends: fields/image
+            layout: cards
+            size: large
+
+
+          url:
+            label: URL
+            type: url
+            help: Lien Chrome Web Store — affiché par le bouton "Download extension" une fois rempli.
+
+      keywords_section:
+        type: fields
+        fields:
+          themes:
+            type: pages
+            label: Thèmes
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('themes').children.filterBy('intendedTemplate', 'tag')
+          concepts:
+            type: pages
+            label: Concepts
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('concepts').children.filterBy('intendedTemplate', 'tag')
+          platforms:
+            type: pages
+            label: Plateformes
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('platforms').children.filterBy('intendedTemplate', 'tag')
+          questions:
+            type: pages
+            label: Questions
+            help: Mots-clés gérés dans les réglages du site
+            query: site.find('question').children.filterBy('intendedTemplate', 'tag')
+
+  sidebar:
+    width: 1/3
+    sections:
+      sources:
+        label: Sources
+        help: La base de données de fiabilité des sources affichée dans l'outil.
+        type: pages
+        template: source
+        layout: list
