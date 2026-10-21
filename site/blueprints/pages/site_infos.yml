@@ -11,14 +11,34 @@ columns:
         fields:
           sentences:
             type: structure
-            label: Liste de titres
+            label: Titres du splash screen
+            help: "Une phrase de 3 mots par ligne (un mot par ligne à l'écran). Le splash passe d'une phrase à l'autre environ toutes les 5 secondes."
             fields:
               sentence:
                 type: text
+                label: Phrase (3 mots)
 
           header_subtitle:
             type: writer
             label: Sous-titre
+            inline: true
+            marks: false
+
+      home:
+        type: fields
+        fields:
+          home_headline:
+            type: structure
+            label: Titre de la page d'accueil
+            help: Une ligne par entrée (affichées l'une sous l'autre, à droite de l'index).
+            fields:
+              line:
+                type: text
+                label: Ligne
+
+          home_subtitle:
+            type: writer
+            label: Sous-titre de la page d'accueil
             inline: true
             marks: false
 
@@ -33,6 +53,6 @@ columns:
 
           informations:
             type: writer
-            label: Texte d'information défilent
+            label: Texte de l'onglet (haut à gauche)
             inline: true
             marks: false
