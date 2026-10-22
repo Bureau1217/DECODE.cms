@@ -11,7 +11,7 @@
 use Kirby\Cms\Page;
 
 return [
-    'debug' => true,
+    'debug' => false,
     // English (default) + French — site/languages/{en,fr}.php. Content
     // files are suffixed per language (`*.en.txt`, `*.fr.txt`); a page
     // with no French translation yet falls back to its English content.
