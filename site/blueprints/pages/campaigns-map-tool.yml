@@ -21,6 +21,8 @@ columns:
             marks:
               - italic
 
+          credits: fields/credits
+
           image:
             extends: fields/image
             layout: cards
