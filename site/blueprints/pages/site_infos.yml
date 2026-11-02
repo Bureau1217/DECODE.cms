@@ -12,11 +12,14 @@ columns:
           sentences:
             type: structure
             label: Titres du splash screen
-            help: "Une phrase de 3 mots par ligne (un mot par ligne à l'écran). Le splash passe d'une phrase à l'autre environ toutes les 5 secondes."
+            help: "Une entrée par titre : le splash passe de l'un à l'autre environ toutes les 5 secondes. Le texte s'adapte à l'écran."
             fields:
               sentence:
-                type: text
-                label: Phrase (3 mots)
+                type: textarea
+                label: Titre
+                buttons: false
+                size: small
+                help: "Chaque retour à la ligne crée une ligne à l'écran. Sans retour à la ligne, chaque mot est sur sa propre ligne."
 
           header_subtitle:
             type: writer
