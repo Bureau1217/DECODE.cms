@@ -22,10 +22,11 @@ columns:
                 help: "Chaque retour à la ligne crée une ligne à l'écran. Sans retour à la ligne, chaque mot est sur sa propre ligne."
 
           header_subtitle:
-            type: writer
+            type: textarea
             label: Sous-titre
-            inline: true
-            marks: false
+            buttons: false
+            size: small
+            help: "Chaque retour à la ligne crée une ligne à l'écran."
 
       home:
         type: fields
