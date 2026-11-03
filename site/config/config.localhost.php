@@ -8,6 +8,8 @@
  */
 
 return [
+    // Detailed error pages, for a developer's own machine only.
+    'debug' => true,
     // Required for the KQL endpoint's Basic Auth (kqlUser/kqlPassword in
     // DECODE.webapp) to work at all — Kirby rejects Basic Auth
     // credentials outright unless this is explicitly true, regardless of
