@@ -33,8 +33,29 @@ return [
         'basicAuth'     => true,
         'allowInsecure' => true,
     ],
+    // Sizes DECODE.webapp asks for (its KQL selects), so visitors never
+    // download an editor's original upload.
+    'thumbs' => [
+        'presets' => [
+            'web'        => ['width' => 1400, 'format' => 'webp', 'quality' => 80],
+            'web-splash' => ['width' => 900, 'format' => 'webp', 'quality' => 78],
+            'web-small'  => ['width' => 480, 'format' => 'webp', 'quality' => 75],
+            'og'         => ['width' => 1200, 'format' => 'jpg', 'quality' => 80],
+        ],
+    ],
     'kql' => [
         'auth' => true,
+        // Lets DECODE.webapp list which pages really exist in French, for its
+        // sitemap and hreflang tags.
+        'classes' => [
+            'allowed' => ['Kirby\\Content\\Translation'],
+        ],
+        'methods' => [
+            'allowed' => [
+                'Kirby\\Cms\\Page::translation',
+                'Kirby\\Content\\Translation::exists',
+            ],
+        ],
     ],
     // `api.basicAuth`/`api.allowInsecure` (needed for the KQL endpoint's
     // Basic Auth — DECODE.webapp's kqlUser/kqlPassword) deliberately
