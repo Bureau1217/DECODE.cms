@@ -43,6 +43,20 @@ columns:
             <<: *paragraph_content
             label: Contenu du paragraphe 3
 
+      references:
+        type: fields
+        fields:
+          legal_content:
+            label: Mentions légales
+            type: blocks
+            fieldsets:
+              text: true
+          credits_content:
+            label: Crédits
+            type: blocks
+            fieldsets:
+              text: true
+
       teams:
         type: fields
         fields:

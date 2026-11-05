@@ -20,9 +20,6 @@ fields:
       last_name:
         type: text
         label: Nom
-      position:
-        type: text
-        label: Poste
       short_bio:
         type: writer
         label: Bio courte
@@ -31,6 +28,4 @@ fields:
           - paragraph
         marks:
           - italic
-      picture:
-        extends: fields/image
-        label: Photo
+          - link
